@@ -1,0 +1,3 @@
+[submodule "pytopseu"]
+	path = thonnycontrib/pseudocode/pytopseu
+	url = https://github.com/jppellet/PyToPseu

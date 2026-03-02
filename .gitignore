@@ -1,0 +1,13 @@
+# Build and distribution
+dist/
+build/
+*.egg-info/
+
+# Bytecode
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+env/
+venv/

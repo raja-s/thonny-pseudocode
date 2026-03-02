@@ -1,0 +1,39 @@
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'thonny-pseudocode'
+version = '0.1.0'
+authors = [
+  { name='Raja Soufi', email='rjsoufi@gmail.com' },
+]
+description = 'A Thonny (https://thonny.org/) plugin generating pseudocode on-demand, powered by the PyToPseu project (https://github.com/jppellet/PyToPseu).'
+readme = 'README.md'
+requires-python = '>=3.12'
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Environment :: Plugins',
+    'Topic :: Education',
+    'Intended Audience :: Education',
+    'Topic :: Text Editors'
+]
+dependencies = [
+    'thonny >= 4.1.0',
+]
+
+[tool.setuptools.packages.find]
+where = ['.']
+include = ['thonnycontrib*']
+exclude = [
+    'thonnycontrib.pseudocode.pytopseu.node_modules*',
+    'thonnycontrib.pseudocode.pytopseu.sample_src*',
+    'thonnycontrib.pseudocode.pytopseu.tools*'
+]
+
+[tool.setuptools.package-data]
+'thonnycontrib.pseudocode' = ['*.png']
