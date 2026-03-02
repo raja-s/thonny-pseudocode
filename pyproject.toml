@@ -8,7 +8,7 @@ version = '0.1.0'
 authors = [
   { name='Raja Soufi', email='rjsoufi@gmail.com' },
 ]
-description = 'A Thonny (https://thonny.org/) plugin generating pseudocode on-demand, powered by the PyToPseu project (https://github.com/jppellet/PyToPseu).'
+description = 'A Thonny plugin that generates inline pseudocode explaining the Python source code line-by-line.'
 readme = 'README.md'
 requires-python = '>=3.12'
 classifiers = [
