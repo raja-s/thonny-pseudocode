@@ -17,7 +17,11 @@ jobs:
       contents: read
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v5
