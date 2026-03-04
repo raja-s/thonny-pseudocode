@@ -4,13 +4,13 @@ build-backend = 'setuptools.build_meta'
 
 [project]
 name = 'thonny-pseudocode'
-version = '0.1.0'
+version = '0.1.1'
 authors = [
   { name='Raja Soufi', email='rjsoufi@gmail.com' },
 ]
 description = 'A Thonny plugin that generates inline pseudocode explaining the Python source code line-by-line.'
 readme = 'README.md'
-requires-python = '>=3.12'
+requires-python = '>=3.10'
 classifiers = [
     'Programming Language :: Python :: 3',
     'License :: OSI Approved :: MIT License',
@@ -20,7 +20,8 @@ classifiers = [
     'Environment :: Plugins',
     'Topic :: Education',
     'Intended Audience :: Education',
-    'Topic :: Text Editors'
+    'Topic :: Text Editors',
+    'Topic :: Text Editors :: Integrated Development Environments (IDE)'
 ]
 dependencies = [
     'thonny >= 4.1.0',
@@ -36,4 +37,4 @@ exclude = [
 ]
 
 [tool.setuptools.package-data]
-'thonnycontrib.pseudocode' = ['*.png']
+'thonnycontrib.pseudocode' = ['**/*.png']
