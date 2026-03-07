@@ -3,6 +3,11 @@
 
 A [Thonny](https://thonny.org/) plugin that generates inline pseudocode on-demand, explaining the Python source code line-by-line, powered by the [PyToPseu project](https://github.com/jppellet/PyToPseu).
 
+Table of contents:
+- [Installation](#installation)
+- [User Guide](#user-guide)
+- [Limitations](#limitations)
+
 ## Installation
 
 Inside Thonny, click on `Tools` > `Manage plug-ins...` to open the plug-ins dialog.
@@ -15,15 +20,15 @@ Once installed, restart Thonny to load the plug-in.
 
 You can generate pseudocode with the plug-in's "Explain with pseudocode" command. There are 3 ways to trigger the command:
 
-From the menu:
+1) From the menu:
 
 ![Generating the pseudocode from the menu](/demos/trigger_menu-item.gif)
 
-From the toolbar:
+2) From the toolbar:
 
 ![Generating the pseudocode from the toolbar](/demos/trigger_toolbar-item.gif)
 
-Using the Ctrl+E/Cmd+E hotkey:
+3) Using the Ctrl+E/Cmd+E hotkey:
 
 ![Generating the pseudocode using the hotkey](/demos/trigger_hotkey.gif)
 
@@ -37,7 +42,7 @@ Since the generated pseudocode is actually appended to the source code in the fo
 Using the command again on edited code will immediately regenerate pseudocode for the new code.
 As soon as the command is used a second time on a particular piece of code, the plug-in will erase the generated pseudocode.
 
-![Erasing the pseudocode](/demos/generate-erase.gif)
+![Erasing the pseudocode](/demos/generate-regenerate-erase.gif)
 
 ## Limitations
 
