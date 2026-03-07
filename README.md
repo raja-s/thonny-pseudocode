@@ -3,10 +3,10 @@
 
 A [Thonny](https://thonny.org/) plugin that generates inline pseudocode on-demand, explaining the Python source code line-by-line, powered by the [PyToPseu project](https://github.com/jppellet/PyToPseu).
 
-Table of contents:
-- [Installation](#installation)
-- [User Guide](#user-guide)
-- [Limitations](#limitations)
+Table of contents:<br/>
+[Installation](#installation)<br/>
+[User Guide](#user-guide)<br/>
+[Limitations](#limitations)
 
 ## Installation
 
