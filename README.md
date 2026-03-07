@@ -1,6 +1,8 @@
 
 # thonny-pseudocode
 
+[![Publish to PyPI](https://github.com/raja-s/thonny-pseudocode/actions/workflows/publish.yml/badge.svg)](https://github.com/raja-s/thonny-pseudocode/actions/workflows/publish.yml)
+
 A [Thonny](https://thonny.org/) plugin that generates inline pseudocode on-demand, explaining the Python source code line-by-line, powered by the [PyToPseu project](https://github.com/jppellet/PyToPseu).
 
 Table of contents:<br/>
@@ -22,27 +24,27 @@ You can generate pseudocode with the plug-in's "Explain with pseudocode" command
 
 1) From the menu:
 
-![Generating the pseudocode from the menu](/demos/trigger_menu-item.gif)
+![Generating the pseudocode from the menu](https://github.com/raja-s/thonny-pseudocode/blob/main/demos/trigger_menu-item.gif?raw=true)
 
 2) From the toolbar:
 
-![Generating the pseudocode from the toolbar](/demos/trigger_toolbar-item.gif)
+![Generating the pseudocode from the toolbar](https://github.com/raja-s/thonny-pseudocode/blob/main/demos/trigger_toolbar-item.gif?raw=true)
 
 3) Using the Ctrl+E/Cmd+E hotkey:
 
-![Generating the pseudocode using the hotkey](/demos/trigger_hotkey.gif)
+![Generating the pseudocode using the hotkey](https://github.com/raja-s/thonny-pseudocode/blob/main/demos/trigger_hotkey.gif?raw=true)
 
 Once generated, the command may be used again to erase the generated pseudocode:
 
 > Note: When the plugin erases generated pseudocode, it will systematically remove all trailing whitespaces on all lines.
 
-![Erasing the pseudocode](/demos/generate-erase.gif)
+![Erasing the pseudocode](https://github.com/raja-s/thonny-pseudocode/blob/main/demos/generate-erase.gif?raw=true)
 
 Since the generated pseudocode is actually appended to the source code in the form of comments (preserving the developer's own comments), the developer may continue to edit the code afterwards.
 Using the command again on edited code will immediately regenerate pseudocode for the new code.
 As soon as the command is used a second time on a particular piece of code, the plug-in will erase the generated pseudocode.
 
-![Erasing the pseudocode](/demos/generate-regenerate-erase.gif)
+![Erasing the pseudocode](https://github.com/raja-s/thonny-pseudocode/blob/main/demos/generate-regenerate-erase.gif?raw=true)
 
 ## Limitations
 
