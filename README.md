@@ -3,7 +3,9 @@
 
 [![Publish to PyPI](https://github.com/raja-s/thonny-pseudocode/actions/workflows/publish.yml/badge.svg)](https://github.com/raja-s/thonny-pseudocode/actions/workflows/publish.yml)
 
-A [Thonny](https://thonny.org/) plugin that generates inline pseudocode on-demand, explaining the Python source code line-by-line, powered by the [PyToPseu project](https://github.com/jppellet/PyToPseu).
+A [Thonny](https://thonny.org/) plug-in that generates inline pseudocode on-demand, explaining the Python source code line-by-line, powered by the [PyToPseu project](https://github.com/jppellet/PyToPseu).
+
+The plug-in currently supports generating pseudocode in English and French (depending on the UI language set by the user in Thonny's settings).
 
 Table of contents:<br/>
 [Installation](#installation)<br/>
@@ -36,7 +38,7 @@ You can generate pseudocode with the plug-in's "Explain with pseudocode" command
 
 Once generated, the command may be used again to erase the generated pseudocode:
 
-> Note: When the plugin erases generated pseudocode, it will systematically remove all trailing whitespaces on all lines.
+> Note: When the plug-in erases generated pseudocode, it will systematically remove all trailing whitespaces on all lines.
 
 ![Erasing the pseudocode](https://github.com/raja-s/thonny-pseudocode/blob/main/demos/generate-erase.gif?raw=true)
 
@@ -48,6 +50,7 @@ As soon as the command is used a second time on a particular piece of code, the 
 
 ## Limitations
 
-The plugin currently has the following limitations:
+The plug-in currently has the following limitations:
 - It cannot generate pseudocode for code with the slightest syntax error
-- Generated pseudocode goes into the editing history and "pollutes" it, which means that erasing pseudocode then undoing the last change will bring back the pseudocode
+- It may insert new-lines in the source code to have enough space for the pseudocode, but will not remove those new-lines when it erases the generated pseudocode
+- Generated pseudocode goes into (and "pollutes") the editing history, which means that erasing pseudocode then undoing the last change will bring back the pseudocode
